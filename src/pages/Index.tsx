@@ -3,7 +3,7 @@ import { useMetaTags } from "@/hooks/useMetaTags";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Shield, Users, Calendar, Analytics, Mobile } from "lucide-react";
+import { Shield, Users, Calendar, BarChart3, Smartphone } from "lucide-react";
 
 const Index = () => {
   useMetaTags('homepage');
@@ -96,11 +96,11 @@ const Index = () => {
               <span className="text-gray-700">HIPAA-compliant dental software for dentists</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Mobile className="text-green-600 flex-shrink-0" size={24} />
+              <Smartphone className="text-green-600 flex-shrink-0" size={24} />
               <span className="text-gray-700">Mobile access for dentists on the go</span>
             </div>
             <div className="flex items-center space-x-3">
-              <Analytics className="text-green-600 flex-shrink-0" size={24} />
+              <BarChart3 className="text-green-600 flex-shrink-0" size={24} />
               <span className="text-gray-700">Real-time analytics and AI-powered insights</span>
             </div>
             <div className="flex items-center space-x-3">
