@@ -67,7 +67,7 @@ const Index = () => {
       <div className="bg-gradient-to-b from-blue-50 to-white py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            One Cloud. Endless Possibilities.
+            One app, endless possibilities
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
             Heynia is the all-in-one, HIPAA-compliant dental practice management software built for growth—from small clinics to multi-location practices.
