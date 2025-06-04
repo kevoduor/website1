@@ -4,6 +4,14 @@ export const metaTags = {
     title: "Cloud-Based Dental Practice Management Software | HIPAA-Compliant | Heynia",
     description: "Heynia is a HIPAA-compliant, cloud-based dental software with patient scheduling, billing, teledentistry, and AI-powered insights—built for small clinics and multi-location practices."
   },
+  about: {
+    title: "About Heynia | Dental Software with Purpose | Technology for Good",
+    description: "Learn about Heynia's mission to empower dental practices while contributing to ending gender-based violence. Technology for good, software with purpose."
+  },
+  login: {
+    title: "Login to Heynia | Dental Practice Management Software",
+    description: "Access your Heynia dental practice management account. Secure login for dental professionals to manage patients, appointments, and practice operations."
+  },
   features: {
     title: "Dental Software with Billing, Scheduling, and EHR Integration | Heynia",
     description: "Discover dental practice software with integrated billing, treatment planning, electronic health records, and automated appointment reminders—customizable for your practice."
