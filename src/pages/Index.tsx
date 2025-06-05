@@ -2,7 +2,7 @@
 import { useMetaTags } from "@/hooks/useMetaTags";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, BarChart3, Smartphone, Star, ArrowRight, Menu, X } from "lucide-react";
+import { CheckCircle, BarChart3, Smartphone, Star, ArrowRight, Menu, X, Heart, Shield, Users, Zap, TrendingUp, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -63,7 +63,7 @@ const Index = () => {
             One app, endless possibilities
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Powerful dental practice management software that simplifies workflows, improves patient care, and grows your practice sustainably.
+            AI-powered dental practice management software that simplifies workflows, improves patient care, and grows your practice sustainably—while making a positive impact on the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link to="/login">
@@ -93,6 +93,58 @@ const Index = () => {
         </div>
       </div>
 
+      {/* Mission Section */}
+      <div className="py-20 px-4 bg-muted/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Technology for Good
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              At Heynia, we believe technology should be a force for good—empowering businesses and helping shape a more just world. We commit <strong className="text-primary">10% of our annual revenue</strong> to organizations working to end gender-based violence.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Heart className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Our Purpose</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Nia, meaning "purpose" in Swahili, drives everything we do. We're not just building software—we're building a better world for dental professionals and their communities.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Shield className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground mb-2">Making Impact</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    When you choose Heynia, you're standing with a company that leads with purpose. Together, we're addressing the global crisis affecting 1 in 3 women worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <Card className="bg-primary/5 border-primary/20">
+              <CardContent className="p-8 text-center">
+                <div className="text-5xl font-bold text-primary mb-4">10%</div>
+                <p className="text-xl font-semibold text-foreground mb-2">Annual Revenue Committed</p>
+                <p className="text-muted-foreground">
+                  Directly supporting organizations working to prevent gender-based violence and support survivors
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+
       {/* Features Section */}
       <div className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -101,19 +153,19 @@ const Index = () => {
               Everything you need to run your practice
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From patient scheduling to billing, our comprehensive platform streamlines every aspect of your dental practice.
+              Modern, AI-powered platform built for dental practices that want to simplify workflows, improve patient engagement, and grow sustainably.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="bg-card border-border hover:shadow-lg transition-shadow">
               <CardContent className="p-8">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <CheckCircle className="text-primary" size={24} />
+                  <Users className="text-primary" size={24} />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-4">Patient Management</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Complete patient records, appointment scheduling, and treatment planning in one integrated system.
+                  Complete patient records, intelligent scheduling, and treatment planning in one integrated system that learns and adapts to your practice.
                 </p>
               </CardContent>
             </Card>
@@ -123,9 +175,9 @@ const Index = () => {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                   <BarChart3 className="text-primary" size={24} />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Analytics & Insights</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4">AI-Powered Analytics</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  AI-powered analytics to track practice performance, revenue trends, and patient engagement metrics.
+                  Get insights that matter. Track practice performance, predict revenue trends, and understand patient engagement with intelligent reporting.
                 </p>
               </CardContent>
             </Card>
@@ -137,10 +189,73 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-4">Mobile Access</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Access your practice data anywhere with our mobile-optimized platform and dedicated apps.
+                  Access your practice data anywhere with our mobile-optimized platform. Manage appointments, review charts, and stay connected on the go.
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <Zap className="text-primary" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Workflow Automation</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Automate appointment reminders, billing processes, and follow-ups. Reduce administrative burden and focus on what matters most—patient care.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <TrendingUp className="text-primary" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Revenue Growth</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Optimize your practice's financial performance with intelligent billing, insurance management, and revenue cycle optimization tools.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:shadow-lg transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <Clock className="text-primary" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Time Efficiency</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Save hours every week with streamlined processes, intelligent automation, and intuitive workflows designed by dental professionals.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Benefits Section */}
+          <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-2xl p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold text-foreground mb-4">Why Dental Practices Choose Heynia</h3>
+              <p className="text-lg text-muted-foreground">Join thousands of dental professionals who trust Heynia to grow their practice</p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">30%</div>
+                <p className="text-sm text-muted-foreground">Average Revenue Increase</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">50%</div>
+                <p className="text-sm text-muted-foreground">Reduction in No-Shows</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">10hrs</div>
+                <p className="text-sm text-muted-foreground">Weekly Time Savings</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
+                <p className="text-sm text-muted-foreground">Uptime Guarantee</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -158,7 +273,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "Heynia has transformed how we manage our practice. The AI insights have helped us increase our revenue by 30%."
+                  "Heynia has transformed how we manage our practice. The AI insights have helped us increase our revenue by 30%, and knowing we're supporting a great cause makes it even better."
                 </p>
                 <p className="text-foreground font-semibold">Dr. Sarah Johnson</p>
                 <p className="text-muted-foreground text-sm">Family Dental Care</p>
@@ -173,7 +288,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "The patient scheduling system is intuitive and has reduced our no-shows significantly."
+                  "The patient scheduling system is intuitive and has reduced our no-shows significantly. The platform grows with less stress and more efficiency—exactly what they promised."
                 </p>
                 <p className="text-foreground font-semibold">Dr. Michael Chen</p>
                 <p className="text-muted-foreground text-sm">Smile Dental Group</p>
@@ -188,7 +303,7 @@ const Index = () => {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
-                  "HIPAA compliance made easy. We can focus on patient care while Heynia handles the rest."
+                  "HIPAA compliance made easy, powerful features, and a company with real purpose. We can focus on patient care while Heynia handles everything else seamlessly."
                 </p>
                 <p className="text-foreground font-semibold">Dr. Emily Rodriguez</p>
                 <p className="text-muted-foreground text-sm">Modern Dentistry</p>
@@ -205,14 +320,22 @@ const Index = () => {
             Ready to transform your practice?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of dental professionals who trust Heynia to streamline their operations and grow their practice.
+            Join thousands of dental professionals who trust Heynia to streamline their operations, grow their practice, and make a positive impact on the world.
           </p>
-          <Link to="/login">
-            <Button size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl shadow-lg">
-              Start Your Free Trial
-              <ArrowRight className="ml-2" size={20} />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Link to="/login">
+              <Button size="lg" className="text-lg px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl shadow-lg">
+                Start Your Free Trial
+                <ArrowRight className="ml-2" size={20} />
+              </Button>
+            </Link>
+            <Button variant="outline" size="lg" className="text-lg px-8 py-4 rounded-xl border-border">
+              Schedule a Demo
             </Button>
-          </Link>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            No credit card required • 30-day free trial • Setup in under 5 minutes
+          </p>
         </div>
       </div>
 
@@ -223,7 +346,7 @@ const Index = () => {
             <div className="md:col-span-2">
               <h3 className="text-2xl font-bold mb-6">Heynia</h3>
               <p className="text-muted-foreground mb-6 text-lg">
-                Empowering dental practices with intelligent software that drives growth and improves patient care.
+                Empowering dental practices with intelligent software that drives growth, improves patient care, and makes a positive impact on the world.
               </p>
               <div className="text-muted-foreground">
                 <p className="mb-2">📍 Hacienda, Oloitoktok Road, Kilimani, Nairobi</p>
@@ -251,7 +374,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-            <p>🔐 HIPAA & OSHA Ready • 🇺🇸 Built for U.S. Dental Practices</p>
+            <p>🔐 HIPAA & OSHA Ready • 🇺🇸 Built for U.S. Dental Practices • 💜 Technology for Good</p>
           </div>
         </div>
       </footer>
